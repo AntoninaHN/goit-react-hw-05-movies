@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchMovieReviews } from "../Api/Api";
+import PropTypes from "prop-types";
 
 // // import styles from './components/Navigation/Navigation.module.css';
 
-export default function MovieDetailsPage() {
+function MovieDetailsPage() {
   const { movieId } = useParams();
   const [reviews, setReviews] = useState(null);
 
@@ -27,3 +28,9 @@ export default function MovieDetailsPage() {
     </>
   );
 }
+
+MovieDetailsPage.propTypes = {
+  movieId: PropTypes.number.isRequired,
+};
+
+export default MovieDetailsPage;
