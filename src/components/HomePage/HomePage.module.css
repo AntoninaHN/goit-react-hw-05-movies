@@ -1,0 +1,9 @@
+.title {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(111, 137, 197);
+}
+ul {
+  list-style: none;
+}

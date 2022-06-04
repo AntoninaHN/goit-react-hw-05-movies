@@ -1,0 +1,26 @@
+.movieCard {
+  display: flex;
+}
+
+.movieCardImg {
+  height: 300px;
+}
+.movieCardInfo {
+  margin-left: 15px;
+}
+.movieCardLink {
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  margin: 20px 0 20px 0;
+  padding: 10px 20px 10px 20px;
+  border: 1.5px solid rgb(111, 137, 197);
+  background-color: rgb(111, 137, 197);
+  border-radius: 2px;
+  color: white;
+}
+.btn:hover {
+  background-color: rgb(208, 186, 214);
+  border: 1.5px solid rgb(208, 186, 214);
+}
