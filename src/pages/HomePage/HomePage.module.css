@@ -7,3 +7,10 @@
 ul {
   list-style: none;
 }
+.link {
+  text-decoration: none;
+  color: #000000;
+}
+.link:hover {
+  color: rgb(111, 137, 197);
+}

@@ -1,5 +1,6 @@
 const BASE_URL = "https://api.themoviedb.org/3";
 const API_KEY = "7c2b5f1208ac9dcd0fcc391e6217ace1";
+export const IMAGE_URL = "https://image.tmdb.org/t/p/w500";
 
 async function fetchWithErrorHandling(url = "", config = {}) {
   const response = await fetch(url, config);
@@ -37,3 +38,13 @@ export function fetchMovieReviews(movieId) {
     `${BASE_URL}/movie/${movieId}/reviews?api_key=${API_KEY}&language=en-US&page=1`
   );
 }
+
+const Api = {
+  fetchTrendingMovie,
+  fetchSearchMovies,
+  fetchMovieId,
+  fetchMovieCredits,
+  fetchMovieReviews,
+};
+
+export default Api;
